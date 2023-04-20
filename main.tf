@@ -31,20 +31,8 @@ resource "aws_elastic_beanstalk_environment" "BeanstalkEnvironment" {
   #   application specific environment veriables
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "SPRING_PROFILES_ACTIVE"
-    value     = var.SpringProfile
-    resource  = ""
-  }
-  setting {
-    namespace = "aws:elasticbeanstalk:application:environment"
     name      = "ENV"
     value     = var.ENV
-    resource  = ""
-  }
-  setting {
-    namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "JavaToolOption"
-    value     = var.JavaToolOption
     resource  = ""
   }
 
