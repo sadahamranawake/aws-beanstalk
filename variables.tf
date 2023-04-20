@@ -19,15 +19,7 @@ variable "LogRetentionInDays" {
   default = 7
 }
 
-variable "SpringProfile" {
-  type = string
-}
-
 variable "ENV" {
-  type = string
-}
-
-variable "JavaToolOption" {
   type = string
 }
 
